@@ -3,27 +3,24 @@
 ## Flowchart Example
 
 ```mermaid
-%%{init: {"flowchart": {"diagramPadding": 130}, "htmlLabels": true}}%%
-flowchart TB
-  Start([Start]) --> Input[Collect Input]
-  Input --> Validate{Valid?}
-  Validate -->|Yes| Process[Process Request]
-  Validate -->|No| Retry[Ask for Fix]
-  Retry --> Input
-  Process --> Done([Done])
+flowchart TD
+  A[Start] --> B{Is it valid?}
+  B -->|Yes| C[Process]
+  B -->|No| D[Fix Input]
+  D --> B
+  C --> E[Done]
 ```
 
 ## Sequence Diagram Example
 
 ```mermaid
-%%{init: {"htmlLabels": true, "sequence": {"diagramMarginX": 130, "diagramMarginY": 30, "bottomMarginAdj": 130}}}%%
 sequenceDiagram
-  participant U as User
-  participant A as API
-  participant D as Database
+  participant User
+  participant API
+  participant DB
 
-  U->>A: POST /items
-  A->>D: Insert item
-  D-->>A: Inserted (id)
-  A-->>U: 201 Created
+  User->>API: Create item
+  API->>DB: Insert row
+  DB-->>API: OK
+  API-->>User: 201 Created
 ```
