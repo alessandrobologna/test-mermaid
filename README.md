@@ -13,7 +13,7 @@ flowchart TD
 
 ### Flowchart SVG (Generated with Node Mermaid.js)
 
-![Flowchart SVG](./flowchart.node.svg)
+<img src="./flowchart.node.svg" alt="Flowchart SVG" width="80%" />
 
 ## Sequence Diagram Example
 
@@ -31,4 +31,4 @@ sequenceDiagram
 
 ### Sequence SVG (Generated with Node Mermaid.js)
 
-![Sequence SVG](./sequence.node.svg)
+<img src="./sequence.node.svg" alt="Sequence SVG" width="80%" />
