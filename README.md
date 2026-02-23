@@ -11,6 +11,10 @@ flowchart TD
   C --> E[Done]
 ```
 
+### Flowchart SVG (Generated with Node Mermaid.js)
+
+![Flowchart SVG](./flowchart.node.svg)
+
 ## Sequence Diagram Example
 
 ```mermaid
@@ -24,3 +28,7 @@ sequenceDiagram
   DB-->>API: OK
   API-->>User: 201 Created
 ```
+
+### Sequence SVG (Generated with Node Mermaid.js)
+
+![Sequence SVG](./sequence.node.svg)
