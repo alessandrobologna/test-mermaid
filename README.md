@@ -13,7 +13,7 @@ flowchart TD
 
 ### Flowchart SVG (Generated with Node Mermaid.js)
 
-<img src="./flowchart.node.svg" alt="Flowchart SVG" width="80%" />
+<img src="./flowchart.node.svg" alt="Flowchart SVG" height="558" />
 
 ## Sequence Diagram Example
 
@@ -31,4 +31,4 @@ sequenceDiagram
 
 ### Sequence SVG (Generated with Node Mermaid.js)
 
-<img src="./sequence.node.svg" alt="Sequence SVG" width="80%" />
+<img src="./sequence.node.svg" alt="Sequence SVG" height="423" />
